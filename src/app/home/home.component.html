@@ -1,0 +1,5 @@
+<button mat-raised-button (click)="toggle()">Show Hide</button>
+
+<ng-container *ngIf="showPlayer">
+  <app-audio-player></app-audio-player>
+</ng-container>

@@ -1,4 +1,4 @@
-import { NgModule } from '@angular/core';
+import { InjectionToken, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -6,7 +6,10 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
+import { LayoutsModule } from './shared';
+import { FlexLayoutModule } from '@angular/flex-layout';
 
+export const WINDOW = new InjectionToken('WINDOW');
 @NgModule({
   declarations: [
     AppComponent
@@ -15,14 +18,16 @@ import { environment } from '../environments/environment';
     BrowserModule.withServerTransition({ appId: 'serverApp' }),
     AppRoutingModule,
     BrowserAnimationsModule,
+    FlexLayoutModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable
       // or after 30 seconds (whichever comes first).
       registrationStrategy: 'registerWhenStable:30000'
-    })
+    }),
+    LayoutsModule
   ],
-  providers: [],
+  providers: [{ provide: WINDOW, useValue: document.defaultView }],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

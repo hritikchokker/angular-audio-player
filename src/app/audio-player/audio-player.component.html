@@ -1,0 +1,22 @@
+<figure>
+  <figcaption>Listen to the T-Rex:</figcaption>
+  <audio #audioPlayer controls [src]="audioSource">
+    Your browser does not support the
+    <code>audio</code> element.
+  </audio>
+</figure>
+
+<div fxFlexFill>
+  <button (click)="userAction()" mat-raised-button>
+    Want to Record Audio
+  </button>
+
+  <button (click)="shouldStop = true" mat-raised-button>
+    Stop
+  </button>
+  <button mat-raised-button href="javascript:void(0)" (click)="revokeAccess()">
+    Revoke Access
+  </button>
+
+  <a #downloadLink href="javascript:void" mat-raised-button>Download Audio</a>
+</div>
