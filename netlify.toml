@@ -1,5 +1,5 @@
 [build]
-  command = "npm run deploy:prerender"
+  command = "npm run prerender"
   functions = "./functions"
   publish = "dist/audioplayer-angular/browser"
 [dev]

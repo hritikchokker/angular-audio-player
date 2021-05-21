@@ -9,7 +9,6 @@
     "test": "ng test",
     "dev:ssr": "ng run audioplayer-angular:serve-ssr",
     "serve:ssr": "node dist/audioplayer-angular/server/main.js",
-    "deploy:prerender": "ng build && npm run prerender",
     "build:ssr": "ng build && ng run audioplayer-angular:server",
     "prerender": "ng run audioplayer-angular:prerender"
   },
