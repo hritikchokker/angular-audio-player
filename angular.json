@@ -1,12 +1,12 @@
 {
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "cli": {
-    "analytics": "85152b17-86ca-482b-a272-32dc52a55d08"
+    "analytics": "8331fcee-47a3-4774-861b-1da4d367a208"
   },
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "angular-audioplayer": {
+    "audioplayer-angular": {
       "projectType": "application",
       "schematics": {
         "@schematics/angular:component": {
@@ -23,7 +23,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/angular-audioplayer/browser",
+            "outputPath": "dist/audioplayer-angular/browser",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -79,10 +79,10 @@
           "builder": "@angular-devkit/build-angular:dev-server",
           "configurations": {
             "production": {
-              "browserTarget": "angular-audioplayer:build:production"
+              "browserTarget": "audioplayer-angular:build:production"
             },
             "development": {
-              "browserTarget": "angular-audioplayer:build:development"
+              "browserTarget": "audioplayer-angular:build:development"
             }
           },
           "defaultConfiguration": "development"
@@ -90,7 +90,7 @@
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "angular-audioplayer:build"
+            "browserTarget": "audioplayer-angular:build"
           }
         },
         "test": {
@@ -116,7 +116,7 @@
         "server": {
           "builder": "@angular-devkit/build-angular:server",
           "options": {
-            "outputPath": "dist/angular-audioplayer/server",
+            "outputPath": "dist/audioplayer-angular/server",
             "main": "server.ts",
             "tsConfig": "tsconfig.server.json",
             "inlineStyleLanguage": "scss"
@@ -143,12 +143,12 @@
           "builder": "@nguniversal/builders:ssr-dev-server",
           "configurations": {
             "development": {
-              "browserTarget": "angular-audioplayer:build:development",
-              "serverTarget": "angular-audioplayer:server:development"
+              "browserTarget": "audioplayer-angular:build:development",
+              "serverTarget": "audioplayer-angular:server:development"
             },
             "production": {
-              "browserTarget": "angular-audioplayer:build:production",
-              "serverTarget": "angular-audioplayer:server:production"
+              "browserTarget": "audioplayer-angular:build:production",
+              "serverTarget": "audioplayer-angular:server:production"
             }
           },
           "defaultConfiguration": "development"
@@ -156,18 +156,16 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
-            "browserTarget": "angular-audioplayer:build:production",
-            "serverTarget": "angular-audioplayer:server:production",
             "routes": [
               "/"
             ]
           },
           "configurations": {
             "production": {
-              "browserTarget": "angular-audioplayer:build:production"
+              "browserTarget": "audioplayer-angular:build:production"
             },
             "development": {
-              "browserTarget": "angular-audioplayer:build:development"
+              "browserTarget": "audioplayer-angular:build:development"
             }
           },
           "defaultConfiguration": "production"
@@ -175,5 +173,5 @@
       }
     }
   },
-  "defaultProject": "angular-audioplayer"
+  "defaultProject": "audioplayer-angular"
 }

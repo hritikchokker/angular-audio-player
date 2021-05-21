@@ -1,6 +1,6 @@
 {
-  "name": "angular-audioplayer",
-  "short_name": "angular-audioplayer",
+  "name": "audioplayer-angular",
+  "short_name": "audioplayer-angular",
   "theme_color": "#1976d2",
   "background_color": "#fafafa",
   "display": "standalone",

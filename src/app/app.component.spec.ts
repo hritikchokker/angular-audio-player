@@ -20,16 +20,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'angular-audioplayer'`, () => {
+  it(`should have as title 'audioplayer-angular'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.componentInstance;
-    expect(app.title).toEqual('angular-audioplayer');
+    expect(app.title).toEqual('audioplayer-angular');
   });
 
   it('should render title', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.nativeElement;
-    expect(compiled.querySelector('.content span').textContent).toContain('angular-audioplayer app is running!');
+    expect(compiled.querySelector('.content span').textContent).toContain('audioplayer-angular app is running!');
   });
 });
