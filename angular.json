@@ -156,6 +156,8 @@
         "prerender": {
           "builder": "@nguniversal/builders:prerender",
           "options": {
+            "browsersTarget": "audioplayer-angular:build:production",
+            "serverTarget": "audioplayer-angular:server:production",
             "routes": [
               "/"
             ]
