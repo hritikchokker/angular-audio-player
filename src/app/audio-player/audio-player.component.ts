@@ -1,3 +1,4 @@
+import { DOCUMENT } from '@angular/common';
 import {
   AfterViewInit,
   Component,
@@ -34,11 +35,14 @@ export class AudioPlayerComponent implements OnInit, AfterViewInit {
     this._isPlaying = value;
   }
   mediaStream!: MediaStream;
+  _window!: Window;
   @ViewChild('audioPlayer', { static: false }) audioPlayer!: ElementRef<HTMLAudioElement>;
   @ViewChild('downloadLink', { static: false }) downloadLink!: ElementRef<HTMLAnchorElement>;
   constructor(
-    @Optional() @Inject(WINDOW) private _window: Window
-  ) { }
+    @Optional() @Inject(DOCUMENT) private _document: Document
+  ) {
+    this._window = this._document.defaultView as Window;
+  }
 
   ngOnInit(): void {
   }

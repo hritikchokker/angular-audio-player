@@ -1,4 +1,4 @@
-import { InjectionToken, NgModule } from '@angular/core';
+import { Inject, InjectionToken, Injector, NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 import { AppRoutingModule } from './app-routing.module';
@@ -27,7 +27,7 @@ export const WINDOW = new InjectionToken('WINDOW');
     }),
     LayoutsModule
   ],
-  providers: [{ provide: WINDOW, useValue: document.defaultView }],
+  providers: [],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

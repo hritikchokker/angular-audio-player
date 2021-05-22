@@ -1,9 +1,15 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
-import { RouterModule } from '@angular/router';
+import { RouterModule, Routes } from '@angular/router';
 import { AudioPlayerModule } from '../audio-player';
 
+
+const routes: Routes = [
+  {
+    path: '', component: HomeComponent
+  }
+]
 
 
 @NgModule({
@@ -12,7 +18,7 @@ import { AudioPlayerModule } from '../audio-player';
   ],
   imports: [
     CommonModule,
-    RouterModule.forChild([{ path: '', component: HomeComponent }]),
+    RouterModule.forChild(routes),
     AudioPlayerModule
   ]
 })
