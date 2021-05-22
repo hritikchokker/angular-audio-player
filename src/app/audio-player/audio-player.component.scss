@@ -1,0 +1,34 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-right: 250px;
+  // height: 400px;
+}
+
+.slider_wrapper {
+  display: flex;
+  justify-content: center;
+  // color: rgb(119, 110, 110);
+}
+:host .mat-slider {
+  width: 300px;
+}
+
+mat-icon {
+  cursor: pointer;
+  margin: 20px;
+}
+
+button {
+  margin: 13px;
+}
+
+@media only screen and (max-width: 550px) {
+  .slider_wrapper {
+    display: none;
+  }
+  .container {
+    padding-right: 100px;
+  }
+}

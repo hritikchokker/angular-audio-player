@@ -9,6 +9,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
 import { DashboardModule } from 'src/app/dashboard/dashboard.module';
 import { RouterModule } from '@angular/router';
+import { AudioPlayerModule } from 'src/app/audio-player';
 
 
 
@@ -22,6 +23,7 @@ import { RouterModule } from '@angular/router';
     DashboardModule,
     RouterModule,
     MatSidenavModule,
+    AudioPlayerModule,
     MatIconModule,
     MatListModule
   ], exports: [LayoutsComponent]

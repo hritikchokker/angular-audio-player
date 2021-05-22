@@ -3,7 +3,8 @@ import { CommonModule } from '@angular/common';
 import { AudioPlayerComponent } from './audio-player.component';
 import { MatButtonModule } from '@angular/material/button';
 import { FlexLayoutModule } from '@angular/flex-layout';
-
+import { MatSliderModule } from '@angular/material/slider';
+import { MatIconModule } from '@angular/material/icon';
 
 
 @NgModule({
@@ -13,7 +14,11 @@ import { FlexLayoutModule } from '@angular/flex-layout';
   imports: [
     CommonModule,
     MatButtonModule,
+    MatSliderModule,
+    MatIconModule,
     FlexLayoutModule,
-  ], exports: [AudioPlayerComponent, MatButtonModule]
+  ], exports: [AudioPlayerComponent, MatButtonModule, MatButtonModule,
+    MatSliderModule,
+    MatIconModule,]
 })
 export class AudioPlayerModule { }

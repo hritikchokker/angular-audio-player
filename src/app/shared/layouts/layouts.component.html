@@ -15,10 +15,17 @@
       </button>
       <span routerLink="/">Audio Player</span>
     </mat-toolbar>
-    <ng-container>
+    <!-- <ng-container> -->
+    <div class="dynamic_content">
       <ng-content select="router-outlet">
       </ng-content>
-      <!-- <app-dashboard></app-dashboard> -->
-    </ng-container>
+    </div>
+    <footer>
+      <div class="footer__container">
+        <app-audio-player></app-audio-player>
+      </div>
+    </footer>
+    <!-- <app-dashboard></app-dashboard> -->
+    <!-- </ng-container> -->
   </mat-sidenav-content>
 </mat-sidenav-container>

@@ -1,22 +1,42 @@
-<figure>
-  <figcaption>Listen to the T-Rex:</figcaption>
-  <audio #audioPlayer controls [src]="audioSource">
-    Your browser does not support the
-    <code>audio</code> element.
-  </audio>
-</figure>
+<div class="container">
+  <figure>
+    <!-- <figcaption>Listen to Calvin Harris josh pan:</figcaption> -->
+    <audio style="display: none;" #audioPlayer controls src="/assets/media/Calvin Harris - josh pan.mp3">
+      Your browser does not support the
+      <code>audio</code> element.
+    </audio>
+  </figure>
+  <mat-icon>
+    arrow_back
+  </mat-icon>
+  <mat-icon>
+    fast_rewind
+  </mat-icon>
+  <ng-container *ngIf="!isPlaying">
+    <mat-icon (click)="play()">
+      play_arrow
+    </mat-icon>
+  </ng-container>
+  <ng-container *ngIf="isPlaying">
+    <mat-icon (click)="pause()">
+      pause
+    </mat-icon>
+  </ng-container>
+  <!-- </button> -->
+  <!-- <button> -->
+  <mat-icon (click)="forwardAudio()">
+    fast_forward
+  </mat-icon>
+  <!-- </button> -->
+  <!-- <button> -->
+  <mat-icon (click)="rewindAudio()">
+    arrow_forward
+  </mat-icon>
+</div>
 
-<div fxFlexFill>
-  <button (click)="userAction()" mat-raised-button>
-    Want to Record Audio
-  </button>
-
-  <button (click)="shouldStop = true" mat-raised-button>
-    Stop
-  </button>
-  <button mat-raised-button href="javascript:void(0)" (click)="revokeAccess()">
-    Revoke Access
-  </button>
-
-  <a #downloadLink href="javascript:void" mat-raised-button>Download Audio</a>
+<!-- [displayWith]="formatLabel" -->
+<!-- tickInterval="1000" step="1000" min="0" max="100000" -->
+<div class="slider_wrapper">
+  <mat-slider [value]="currentTime" [max]="totalTime" thumbLabel aria-label="units"></mat-slider>
+  current time: {{currentShowTime }}/total time{{totalTime}}
 </div>
