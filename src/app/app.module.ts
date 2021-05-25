@@ -8,6 +8,7 @@ import { ServiceWorkerModule } from '@angular/service-worker';
 import { environment } from '../environments/environment';
 import { LayoutsModule } from './shared';
 import { FlexLayoutModule } from '@angular/flex-layout';
+import { HttpClientModule } from '@angular/common/http';
 
 export const WINDOW = new InjectionToken('WINDOW');
 @NgModule({
@@ -19,6 +20,7 @@ export const WINDOW = new InjectionToken('WINDOW');
     AppRoutingModule,
     BrowserAnimationsModule,
     FlexLayoutModule,
+    HttpClientModule,
     ServiceWorkerModule.register('ngsw-worker.js', {
       enabled: environment.production,
       // Register the ServiceWorker as soon as the app is stable

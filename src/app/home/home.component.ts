@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import { MusicListService } from '../music/services/music-list.service';
 @Component({
   selector: 'app-home',
   templateUrl: './home.component.html',
@@ -8,9 +8,12 @@ import { Component, OnInit } from '@angular/core';
 export class HomeComponent implements OnInit {
 
   showPlayer = false;
-  constructor() { }
+  constructor(
+    private _musicDataService: MusicListService
+  ) { }
 
   ngOnInit(): void {
+    this._musicDataService.getMusicList();
   }
 
   toggle() {

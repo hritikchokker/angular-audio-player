@@ -1,0 +1,18 @@
+<mat-card class="mat-card">
+  <mat-card-header>
+    <img matCardAvatar src="/assets/pexels-stas-knop-1626481.jpg">
+    <mat-card-title>{{musicDetail?.title}}</mat-card-title>
+    <mat-card-subtitle>{{musicDetail?.artist}}</mat-card-subtitle>
+  </mat-card-header>
+  <img class="mat-card__image" src="/assets/pexels-stas-knop-1626481.jpg">
+  <mat-card-content>
+    {{musicDetail?.description}}
+  </mat-card-content>
+  <mat-card-actions align="end">
+    <button mat-button>Action1</button>
+    <button mat-button>Action2</button>
+  </mat-card-actions>
+  <mat-card-footer>
+    Footer
+  </mat-card-footer>
+</mat-card>

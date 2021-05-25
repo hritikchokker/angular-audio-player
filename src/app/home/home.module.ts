@@ -3,6 +3,8 @@ import { CommonModule } from '@angular/common';
 import { HomeComponent } from './home.component';
 import { RouterModule, Routes } from '@angular/router';
 import { AudioPlayerModule } from '../audio-player';
+import { MatButtonModule } from '@angular/material/button';
+import { MatIconModule } from '@angular/material/icon';
 
 
 const routes: Routes = [
@@ -19,7 +21,8 @@ const routes: Routes = [
   imports: [
     CommonModule,
     RouterModule.forChild(routes),
-    AudioPlayerModule
+    MatButtonModule,
+    MatIconModule
   ]
 })
 export class HomeModule { }

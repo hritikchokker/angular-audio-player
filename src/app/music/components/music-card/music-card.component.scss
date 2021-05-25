@@ -1,0 +1,37 @@
+:host {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.mat-card {
+  background: linear-gradient(135deg, #e3e3e3 0%, #5d6874 100%);
+  padding: 30px;
+  margin: 20px 0 20px 0;
+  width: 80vw;
+  border-radius: 20px;
+  text-align: center;
+  &__image {
+    width: 100px;
+    height: 100px;
+  }
+}
+@media only screen and (max-width: 500px) {
+  .mat-card {
+    width: 70vw;
+    text-align: center;
+  }
+  .mat-card-actions {
+    margin: auto;
+  }
+}
+.mat-card:hover {
+  // animation: shuffleIt 3s;
+}
+@keyframes shuffleIt {
+  from {
+    transform: scaleX(1.2);
+  }
+  to {
+    transform: scaleX(1.2);
+  }
+}

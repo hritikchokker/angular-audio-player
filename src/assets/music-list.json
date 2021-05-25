@@ -1,0 +1,74 @@
+[
+  {
+    "title": "Yah Yah",
+    "src": "/assets/media/Yah Yah - josh pan.mp3",
+    "description": "josh pan",
+    "artist": "josh pan"
+  },
+  {
+    "title": "t-rex roar",
+    "src": "assets/media/t-rex-roar.mp3",
+    "description": "dummy",
+    "artist": "dummy"
+  },
+  {
+    "title": "Rhythm Organyzer",
+    "src": "/assets/media/RhythmOrganyzer - Noir Et Blanc Vie.mp3",
+    "description": "Noir Et Blanc",
+    "artist": "Noir Et Blanc"
+  },
+  {
+    "title": "Ocean View",
+    "src": "/assets/media/Ocean View - Patrick Patrikios.mp3",
+    "description": "Patrick Patrikios",
+    "artist": "Patrick Patrikios"
+  },
+  {
+    "title": "Meet & Fun !",
+    "src": "/assets/media/Meet & Fun! - Ofshane.mp3",
+    "description": "Ofshane",
+    "artist": "Ofshane"
+  },
+  {
+    "title": "Everywhere You Know",
+    "src": "/assets/media/Everywhere You Know - Jeremy Black.mp3",
+    "description": "Jeremy Black",
+    "artist": "Jeremy Black"
+  },
+  {
+    "title": "Cold Water",
+    "src": "/assets/media/Cold Water - Patrick Patrikios.mp3",
+    "description": "Patrick Patrikios",
+    "artist": "Patrick Patrikios"
+  },
+  {
+    "title": "Josh Pan",
+    "src": "/assets/media/Calvin Harris - josh pan.mp3",
+    "description": "Calvin Harris",
+    "artist": "Calvin Harris"
+  },
+  {
+    "title": "Breathe",
+    "src": "src/assets/media/Breatha - josh pan.mp3",
+    "description": "josh pan",
+    "artist": "josh pan"
+  },
+  {
+    "title": "Brass Orchid",
+    "src": "/assets/media/Brass Orchid - Bobby Richards.mp3",
+    "description": "Bobby Richards",
+    "artist": "Bobby Richards"
+  },
+  {
+    "title": "Airbone",
+    "src": "/assets/media/Airborne - Quincas Moreira.mp3",
+    "description": "Quincas Moreira",
+    "artist": "Quincas Moreira"
+  },
+  {
+    "title": "19th Floor",
+    "src": "/assets/media/19th Floor - Bobby Richards.mp3",
+    "description": "Bobby Richards",
+    "artist": "Bobby Richards"
+  }
+]

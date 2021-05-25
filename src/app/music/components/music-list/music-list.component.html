@@ -1,0 +1,14 @@
+<ng-container *ngIf="musicList$ |async as musicList;else loading">
+
+  <div fxLayout="column">
+    <div fxFlex="100%" *ngFor="let item of musicList">
+      <app-music-card [item]='item'></app-music-card>
+    </div>
+  </div>
+</ng-container>
+
+<ng-template #loading>
+  <div class="loader">
+    <mat-progress-spinner mode="indeterminate" color="primary"></mat-progress-spinner>
+  </div>
+</ng-template>

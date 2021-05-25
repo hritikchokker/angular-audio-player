@@ -95,7 +95,7 @@ export class AudioPlayerComponent implements OnInit, AfterViewInit {
   }
   forwardAudio() {
     if (this.canUpdateTime(true)) {
-      this.currentTime += 30;
+      this.currentTime += 600;
       this.audioPlayer.nativeElement.currentTime = this.currentTime;
     }
   }
@@ -109,7 +109,7 @@ export class AudioPlayerComponent implements OnInit, AfterViewInit {
   }
   rewindAudio() {
     if (this.canUpdateTime(false)) {
-      this.currentTime -= 30;
+      this.currentTime -= 600;
       this.audioPlayer.nativeElement.currentTime = this.currentTime;
     }
   }
